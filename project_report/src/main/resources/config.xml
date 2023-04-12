@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<root >
+
+    <school name="第一初级中学" description="学校信息">
+        <grade name="八年级" description="年级信息" >
+            <classes name="一班" description="班级信息" master="张非" studentCount="40" />
+            <classes name="二班" description="班级信息" master="李亏" studentCount="38" />
+            <classes name="三班" description="班级信息" master="关雨" studentCount="39" />
+            <classes name="四班" description="班级信息" master="赵芸" studentCount="41" />
+        </grade>
+    </school>
+
+    <school name="第二初级中学" description="学校信息">
+        <grade name="九年级" description="年级信息" >
+            <classes name="一班" description="班级信息" master="张非" studentCount="40" />
+            <classes name="二班" description="班级信息" master="李亏" studentCount="38" />
+            <classes name="三班" description="班级信息" master="关雨" studentCount="39" />
+            <classes name="四班" description="班级信息" master="赵芸" studentCount="41" />
+        </grade>
+    </school>
+
+</root>
