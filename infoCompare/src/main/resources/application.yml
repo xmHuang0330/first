@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/summary?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML5
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+    cache: false
+#spring集成Mybatis环境
+mybatis:
+  type-aliases-package: com.xm.entity  #pojo别名扫描包
+  #加载Mybatis映射文件
+  mapper-locations: classpath:com/xm/mapper/*Mapper.xml
+

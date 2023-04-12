@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--namespace 名称空间，指定对哪个接口进行映射-->
+<mapper namespace="com.xm.mapper.DataMapper">
+    <!--
+        select 表示执行查询sql
+            id 唯一； 必须与接口中方法名称一致。
+            resultType 表示执行查询SQL封装的实体类对象。如果放回集合，只需要指定集合中元素的类型即可。
+            标签体中存放要执行的select语句 
+    -->
+    <resultMap id="dataResultMap" type="com.xm.entity.Data">
+        <id property="idxId" column="idx_id"></id>
+        <result property="ukSampleName" column="uk_sample_name"></result>
+        <result property="chip" column="chip"></result>
+        <result property="tablet" column="tablet"></result>
+        <result property="well" column="well"></result>
+        <result property="mr36aLt" column="mr36a_lt"></result>
+        <result property="bglYLt" column="bgl_y_lt"></result>
+    </resultMap>
+    <select id="findAll" resultMap="dataResultMap">
+        select * from summary_psxfu7221001_22729b
+    </select>
+</mapper>
