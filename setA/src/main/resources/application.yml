@@ -1,0 +1,19 @@
+logging:
+  level:
+    fayi.APP: warn
+    fayi.Analyse: info
+    analyseServer: info
+    root: warn
+  logback:
+    name:
+      path: logs/
+spring:
+  output:
+    ansi:
+      enabled: always
+  main:
+    banner-mode: off
+
+
+test:
+  artifactId: 'setC'
